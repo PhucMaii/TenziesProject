@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 100px;
+    background-color: #0B2434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla";
+}
+
+main{
+    width: 600px;
+    height: 500px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: rgba(37, 116, 195, 0.2) 0px 8px 24px;
+    text-align: center;
+    /* padding: 10px; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.die-container{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.die{
+    width: 80px;
+    height: 80px;
+    border: none;
+
+    color: #2B283A;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    position: relative;
+    
+}
+
+.die:hover{
+    background-color: rgb(205, 205, 205);
+}
+
+.die:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.roll-button{
+    margin: 20px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    background-color: #5035FF;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.roll-button:hover{
+    background-color: #5035ffc1;
+}
+
+.roll-button:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+
+    position: absolute;
+    
+}
